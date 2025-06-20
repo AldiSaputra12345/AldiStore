@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Discord Kami Sekarang!</title>
+    <!-- Logo Discord & Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #5865F2, #404EED);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .discord-card {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px 30px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .discord-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .discord-logo {
+            font-size: 50px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p.desc {
+            opacity: 0.9;
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 100px;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #00ff88;
+        }
+
+        .join-btn {
+            background: #5865F2;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(88, 101, 242, 0.5);
+        }
+
+        .join-btn:hover {
+            background: #4752C4;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(88, 101, 242, 0.7);
+        }
+
+        .join-btn .icon {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 480px) {
+            .stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .discord-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="discord-card">
+        <!-- Logo -->
+        <div class="discord-logo">
+            <i class="fab fa-discord"></i>
+        </div>
+        
+        <h1>Gabung Server Kami</h1>
+        <p class="desc">Komunitas paling seru untuk belajar, bermain, dan berkarya bersama!</p>
+        
+        <!-- Statistik Member -->
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">5.2K+</div>
+                <div>Members</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div>Channels</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div>Active</div>
+            </div>
+        </div>
+        
+        <!-- Tombol Join -->
+        <button id="joinButton" class="join-btn">
+            <span class="icon"><i class="fab fa-discord"></i></span>
+            Join Sekarang
+        </button>
+    </div>
+
+    <script>
+        // Fungsi untuk join Discord
+        document.getElementById('joinButton').addEventListener('click', function() {
+            // Link Discord Anda
+            window.open('https://discord.gg/qmm5xJUC', '_blank');
+            
+            // Animasi klik
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
