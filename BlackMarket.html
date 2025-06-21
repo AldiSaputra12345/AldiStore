@@ -1,39 +1,51 @@
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   STIGMA Black Market
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Windah Topup Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
   <style>
-   @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-    body {
-      margin: 0;
-      font-family: 'Anton', sans-serif;
+    /* Diagonal stripes overlay */
+    .diagonal-stripes {
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.15) 10px,
+        transparent 10px,
+        transparent 20px
+      );
     }
   </style>
- </head>
- <body class="bg-black flex items-center justify-center min-h-screen p-4">
-  <div class="relative max-w-full max-h-full rounded-3xl overflow-hidden border border-black" style="aspect-ratio: 16 / 9; max-width: 1000px; max-height: 562px;">
-   <img alt="Futuristic HUD background with glowing blue circular interface elements and a dark skull in the center" class="w-full h-full object-cover" height="562" src="https://storage.googleapis.com/a1aa/image/25aa7a5a-d371-44ee-6d27-895d98682fc6.jpg" width="1000"/>
-   <div class="absolute inset-0 flex flex-col items-center justify-center">
-    <div class="bg-black bg-opacity-90 px-4 py-1 mb-2">
-     <span class="text-gray-300 text-[28px] leading-none tracking-widest uppercase font-extrabold" style="font-family: 'Anton', sans-serif;">
-      STIGMA Black Market
-     </span>
-    </div>
-    <div class="bg-black bg-opacity-90 px-6 py-2">
-     <span class="text-gray-300 text-[72px] leading-none tracking-widest uppercase font-extrabold" style="font-family: 'Anton', sans-serif;">
-      BLACK MARKET
-     </span>
-    </div>
-   </div>
-  </div>
- </body>
-</html>
+</head>
+<body>
+  <div
+    class="min-h-screen p-6"
+    style="background: linear-gradient(90deg, #4ac1d1 0%, #d1c88a 100%)"
+  >
+    <div class="max-w-6xl mx-auto">
+      <div class="relative rounded-xl overflow-hidden">
+        <img
+          src="https://placehold.co/900x300/png?text=Windah+Topup+Store+Banner+with+characters+and+logo"
+          alt="Windah Topup Store banner with various game characters, logo, and text 'WELCOME TO WINDAH Topup Store' on a blue sky background with clouds"
+          class="w-full rounded-xl object-cover"
+        />
+        <button
+          aria-label="Previous"
+          class="absolute top-1/2 left-4 -translate-y-1/2 bg-[#0a4a5a] bg-opacity-70 hover:bg-opacity-90 text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button
+          aria-label="Next"
+          class="absolute top-1/2 right-4 -translate-y-1/2 bg-[#0a4a5a] bg-opacity-70 hover:bg-opacity-90 text-white rounded-full w-10 h-10 flex items-center justify-center"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
    <h2 class="mt-10 mb-6 text-white font-bold text-sm md:text-base flex items-center gap-2 select-none">
     <span>
      🔥
