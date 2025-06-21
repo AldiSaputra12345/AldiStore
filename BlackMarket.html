@@ -1,34 +1,63 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>Bianca Stigma</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto+Slab:ital,wght@1,700&display=swap');
-        .font-montserrat { font-family: 'Montserrat', sans-serif; }
-        .font-robotoslab { font-family: 'Roboto Slab', serif; font-style: italic; font-weight: 700; }
-    </style>
-</head>
-<body class="bg-black flex flex-col items-center min-h-screen p-4">
-    <div class="relative w-[360px] h-[600px] select-none mb-10">
-        <!-- Main container with rounded shapes -->
-        <div class="absolute top-0 left-0 w-[360px] h-[600px] rounded-[60px_60px_0_60px] bg-[#6f7a8a] opacity-90 z-10"></div>
-        <div class="absolute top-[60px] left-0 w-[360px] h-[540px] rounded-[40px_40px_0_40px] bg-[#4a5063] opacity-90 z-20"></div>
-        <div class="absolute top-[120px] left-0 w-[360px] h-[480px] rounded-[40px_40px_0_40px] bg-[#6f7a8a] opacity-90 z-30"></div>
-        
-        <!-- Content of the large logo -->
-        <div class="absolute top-[180px] left-[20px] w-[180px] z-40">
-            <h1 class="font-montserrat text-black text-[48px] leading-[1] tracking-tight">BIANCA</h1>
-            <h1 class="font-montserrat text-black text-[48px] leading-[1] tracking-tight mt-[-8px]">STIGMA</h1>
-            <p class="font-robotoslab text-white text-[12px] mt-1">THE PHANTOM TRACER</p>
-        </div>
-        
-        <!-- Character image -->
-        <img alt="Futuristic female character" class="absolute bottom-0 right-0 w-[280px] h-[480px] object-contain z-30" draggable="false" src="https://i.ibb.co/DHqBygtx/FB-IMG-1750472715790.jpg"/>
-    </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bianca Stigma Animated</title>
+  <style>
+    body {
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1.5s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .glow-hover {
+      transition: all 0.3s ease-in-out;
+      border-radius: 12px;
+      box-shadow: 0 0 0 transparent;
+    }
+
+    .glow-hover:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(173, 216, 230, 0.5); /* cahaya biru */
+    }
+
+    img {
+      width: 90%;
+      max-width: 500px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="https://ibb.co/Hf5pYpJ3" target="_blank">
+    <img 
+      src="https://i.ibb.co/5gbxvx7w/IMG-20250621-095627-687.jpg" 
+      alt="Bianca Stigma" 
+      class="fade-in glow-hover"
+    >
+  </a>
+
+</body>
+</html>
     <h2 class="mt-10 mb-6 text-white font-bold text-sm md:text-base flex items-center gap-2 select-none">
         <span>🔥</span>
         PALING BANYAK DI BELI
